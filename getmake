@@ -1,0 +1,16 @@
+#!/bin/bash
+
+source_dir="/home/$USER/bin"
+makefile="$source_dir/Makefile"
+c_file="$source_dir/stdavk.c"
+h_file="$source_dir/stdavk.h"
+
+if [ -f "$makefile" ] && [ -f "$c_file" ] && [ -f "$h_file" ]; then
+  cp "$makefile" .
+  cp "$c_file" .
+  cp "$h_file" .
+  echo "Makefile en stdavk-lib gekopieerd"
+else
+  echo "Een of meer bestanden ontbreken in ~/bin"
+fi
+
