@@ -1,0 +1,2 @@
+# bin
+Bestanden uit ~/bin 
