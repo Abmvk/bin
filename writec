@@ -9,9 +9,9 @@ if [ -z "$new_file" ]; then
 fi
 
 if [ -f "$new_file" ]; then
-  nano -ilY c "$new_file"
+  vim  "$new_file"
 else
   cp "$template_file" "$new_file"
-  nano -ilY c "$new_file"
+  vim "$new_file"
 fi
 
